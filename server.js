@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
@@ -272,6 +273,10 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Local dev server
 app.listen(PORT, () => {
   console.log(`Mineville Zeqa Bedfight server running on http://localhost:${PORT}`);
 });
+
+// Export for Vercel serverless
+module.exports = app;
