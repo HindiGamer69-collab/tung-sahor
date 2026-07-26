@@ -1,0 +1,16 @@
+{
+  "name": "mineville-zeqa-bedfight",
+  "version": "1.0.0",
+  "description": "Website for Mineville Zeqa Bedfight",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "simple-git": "^3.36.0"
+  }
+}
